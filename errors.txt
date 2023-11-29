@@ -1,2 +1,2 @@
-Erro: O arquivo nao_existe_transacoes.csv não foi encontrado.
+[2023-11-29 12:14:45] Erro: O arquivo nao_existe_transacoes.csv não foi encontrado.
 .

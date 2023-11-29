@@ -1,4 +1,5 @@
 import csv
+from datetime import datetime
 
 def ler_arquivo(caminho):
     """
@@ -49,8 +50,10 @@ def processar_dados(caminho, valor_limite):
 
     except Exception as ex:
         # Registra o erro em um arquivo de log
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        mensagem_erro = f'[{timestamp}] Erro: {str(ex)}.'
         with open('errors.txt', 'a', encoding='UTF-8') as log_file:
-            log_file.write(f'Erro: {str(ex)}.\n')
+            log_file.write(f'{mensagem_erro}\n')
 
 # Exemplo de uso
 processar_dados('transacoes.csv', 1000)
