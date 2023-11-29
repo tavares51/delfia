@@ -1,0 +1,2 @@
+Erro: O arquivo nao_existe_transacoes.csv não foi encontrado.
+.
